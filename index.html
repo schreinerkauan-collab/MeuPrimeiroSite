@@ -20,4 +20,14 @@
     <button>👻</button>
    </main>
 </body>
+<script>
+    const botoes = document. queryselectorALL("button");
+    botoes.forEach(function(botao){
+        botao.addEventlistener("click", botaoclicado);
+        function botaoclicado(){
+            let texto = botao. queryselector("span");
+            texto. textConent++;
+        }
+    })
+</script>
 </html>
